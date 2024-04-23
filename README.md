@@ -1,2 +1,7 @@
-# HLC-Ejercicio-3.2
-JavaScript Practices
+- Se pueden modificar las tarifas en las variables superiores del código
+- Añadida la información de pagos en la parte superior de la página
+- Se ha introducido tanto el desplegable de días de la semana como la opción radiobutton de laborable y festivo.
+- Al seleccionar "Domingo", la opción de tipo de día se desactiva al entender que el "Domingo" es festivo.
+- Aun así, se puede seleccionar cualquier día de la semana y hacerlo festivo marcándolo como tal en el radiobutton.
+- El campo de nombre es requerido, en caso de no ponerlo salta el error mostrándolo en pantalla dentro del document.
+- Al hacer click en el botón "Calcular", muestra el total en el mismo document.

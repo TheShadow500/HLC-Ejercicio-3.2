@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HLC - Ejercicio 3.2</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header><img src="./img/logo.png"></header>
+        <main>
+            <div class="linea honorarios" id="honorarios"></div>
+            <div class="separador"></div>
+            <div class="linea">
+                <div class="campoI"><label for="nombre">Nombre del Trabajador</label></div>
+                <div class="campoD"><input type="text" id="nombre"></div>
+            </div>
+            <div class="linea">
+                <div class="errorNombre" id="errorNombre"></div>
+            </div>
+            <div class="separador"></div>
+
+            <!-- DIA -->
+            <div class="linea">
+                <div class="campoI"><label for="dia">Día de la Semana</label></div>
+                <div class="campoD">
+                    <select name="dia" id="dia">
+                        <option value="Lunes" selected>Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miercoles">Miércoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                        <option value="Sabado">Sábado</option>
+                        <option value="Domingo">Domingo</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- HORAS -->
+            <div class="linea">
+                <div class="campoI"><label for="horas">Horas trabajadas</label></div>
+                <div class="campoD">
+                    <select name="horas" id="horas">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- TURNO -->
+            <div class="linea">
+                <div class="campoI"><label>Turno</label></div>
+                <div class="campoR">
+                    <label for="diurno">Diurno</label>
+                    <input type="radio" id="diurno" name="turno" value="diurno" checked>
+                </div>
+                <div class="campoR">    
+                    <label for="nocturno">Nocturno</label>
+                    <input type="radio" id="nocturno" name="turno" value="nocturno">
+                </div>
+            </div>
+
+            <!-- TIPO -->
+            <div class="linea">
+                <div class="campoI"><label>Tipo de Día</label></div>
+                <div class="campoR">
+                    <label for="laboral">Laborable</label>
+                    <input type="radio" id="laboral" name="tipo" value="laborable" checked>
+                </div>
+                <div class="campoR">    
+                    <label for="festivo">Festivo</label>
+                    <input type="radio" id="festivo" name="tipo" value="festivo">
+                </div>
+            </div>
+
+            <!-- BOTON -->
+            <div class="linea lineaB">
+                <input type="button" id="calcular" value="Calcular">
+            </div>
+
+            <!-- RESULTADO -->
+            <div class="linea">
+                <div class="resultado" id="resultado"></div>
+            </div>
+        </main>
+        <footer>
+            ©2024 HLC Ejercicio 3.2 - Creado por Daniel Amores
+        </footer>
+    </div>
+</body>
+</html>
+<script src="./js/script.js"></script>
